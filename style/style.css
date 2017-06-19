@@ -59,6 +59,14 @@ a:hover {
   display: inline-block;
 }
 
+.site-top-nav .top-menu li a {
+  color: white;
+}
+
+.site-top-nav .top-menu li a:hover {
+  text-decoration: none;
+}
+
 .mysideNav {
   width: 200px;
   position: absolute;
@@ -77,10 +85,14 @@ a:hover {
   padding: 20px;
 }
 
-.mysideNav h1 span {
+.mysideNav h1 span:first-of-type {
+  border-top: 6px solid #575756;
+}
+
+.mysideNav h1 span:nth-of-type(2) {
   color: #EE2C6C;
   border-bottom: 6px solid #575756;
-  font-size: 19px;
+  font-size: 23px;
   vertical-align: top;
 }
 
@@ -129,6 +141,18 @@ a:hover {
   background: #eaeaea;
 }
 
+.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart {
+  width: 570px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.07);
+  padding: 10px;
+}
+
+.text_color, .main_content .start_info .start_link_info_plus a:first-of-type, .main_content .start_info .start_link_info_plus a:not(:first-of-type) {
+  color: #494c4a;
+}
+
 .main_content {
   width: auto;
   margin-top: 2.5%;
@@ -142,13 +166,11 @@ a:hover {
 
 .main_content .content .content_wrapper li {
   list-style-type: none;
+  width: 570px;
+  margin-bottom: 2.5%;
 }
 
-.main_content .content .content_wrapper li .project {
-  width: 570px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.07);
+.main_content .content .content_wrapper li div {
   padding: 10px;
 }
 
@@ -170,6 +192,7 @@ a:hover {
   width: 300px;
   padding: 10px;
   vertical-align: top;
+  margin-left: 2.5%;
 }
 
 .main_content .content .content_wrapper li .status_infos a {
@@ -203,6 +226,72 @@ a:hover {
 }
 
 .main_content .content .content_wrapper .vos_projets a:hover {
+  color: white;
+  background-color: #494c4a;
+}
+
+.main_content .start_info span {
+  padding: 10px;
+}
+
+.main_content .start_info p {
+  padding: 10px;
+}
+
+.main_content .start_info .start_link_info_plus a:first-of-type {
+  background: #def6dc;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 1.5%;
+}
+
+.main_content .start_info .start_link_info_plus span {
+  padding: 10px;
+}
+
+.main_content .start_info .start_link_info_plus a:not(:first-of-type) {
+  background-color: #feeef3;
+  display: block;
+  padding: 10px;
+  margin-bottom: 1.5%;
+  border-radius: 5px;
+}
+
+.main_content .start_info .start_link_info_plus a:not(:first-of-type) span {
+  padding: 10px;
+}
+
+.main_content .section_pro span {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.main_content .section_pro .pro_infos_link a {
+  border: 1px solid #494c4a;
+  border-radius: 5px;
+  color: #494c4a;
+  padding: 10px;
+}
+
+.main_content .section_pro .pro_infos_link a:hover {
+  color: white;
+  background-color: #494c4a;
+}
+
+.main_content .spotify_chart span {
+  padding: 10px;
+  margin-bottom: 1.5%;
+}
+
+.main_content .spotify_chart .link_for_statistique a {
+  border: 1px solid #494c4a;
+  border-radius: 5px;
+  color: #494c4a;
+  padding: 10px;
+}
+
+.main_content .spotify_chart .link_for_statistique a:hover {
   color: white;
   background-color: #494c4a;
 }

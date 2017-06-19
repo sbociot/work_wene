@@ -42,6 +42,10 @@ a:hover
     li
       list-style: none
       display: inline-block
+      a
+        color: white
+        &:hover
+          text-decoration: none
 
 // side navigation
 .mysideNav
@@ -58,10 +62,12 @@ a:hover
     text-align: center
     border-bottom: 1px solid #eaeaea
     padding: 20px
-    span
+    span:first-of-type
+      border-top: 6px solid #575756
+    span:nth-of-type(2)
       color: #EE2C6C
       border-bottom: 6px solid #575756
-      font-size: 19px
+      font-size: 23px
       vertical-align: top
   .menu
     li
@@ -98,7 +104,14 @@ a:hover
   height: 2px
   border: none
   background: #eaeaea
-
+.box_normalize
+  width: 570px
+  background-color: white
+  border-radius: 5px
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.07)
+  padding: 10px
+.text_color
+  color: #494c4a
 .main_content
   width: auto
   margin-top: 2.5%
@@ -110,12 +123,12 @@ a:hover
     .content_wrapper
       li
         list-style-type: none
+        width: 570px
+        margin-bottom: 2.5%
+        div
+          padding: 10px
         .project
-            width: 570px
-            background-color: white
-            border-radius: 5px
-            box-shadow: 0 0 1px 1px rgba(0,0,0,.07)
-            padding: 10px
+            @extend .box_normalize
             span
               font-size: 1.8rem
               font-weight: 400
@@ -130,6 +143,7 @@ a:hover
           width: 300px
           padding: 10px
           vertical-align: top
+          margin-left: 2.5%
           a
             background-color: #e71864
             color: white
@@ -154,3 +168,56 @@ a:hover
           &:hover
             color: white
             background-color: #494c4a
+  .start_info
+        @extend .box_normalize
+        span
+          padding: 10px
+        p
+          padding: 10px
+        .start_link_info_plus
+          a:first-of-type
+            background: #def6dc
+            display: block
+            border-radius: 5px
+            padding: 10px
+            margin-bottom: 1.5%
+            @extend .text_color
+          span
+              padding: 10px
+          a:not(:first-of-type)
+            background-color: #feeef3
+            display: block
+            padding: 10px
+            margin-bottom: 1.5%
+            border-radius: 5px
+            @extend .text_color
+            span
+              padding: 10px
+  .section_pro
+    @extend .box_normalize
+    span
+      font-weight: bold
+      padding: 10px
+    .pro_infos_link
+      a
+          border: 1px solid #494c4a
+          border-radius: 5px
+          color: #494c4a
+          padding: 10px
+          &:hover
+            color: white
+            background-color: #494c4a
+  .spotify_chart
+    @extend .box_normalize
+    span
+      padding: 10px
+      margin-bottom: 1.5%
+    .link_for_statistique
+        a
+            border: 1px solid #494c4a
+            border-radius: 5px
+            color: #494c4a
+            padding: 10px
+            &:hover
+              color: white
+              background-color: #494c4a
