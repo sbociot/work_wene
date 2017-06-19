@@ -132,6 +132,9 @@
         <div class="spotify_chart">
           <span>Surveillez les écoutes de vos morceaux sur Spotify au jour le jour</span>
           <div class="link_for_statistique">
+            <div class="chart_canvas">
+              <canvas id="myChart" height="350px" width="510"></canvas>
+            </div>
             <a href="#">
               <span>Visualisez vos statistiques</span>
             </a>
