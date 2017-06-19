@@ -3,10 +3,10 @@ console.log(CHART);
   let  lineChart = new Chart(CHART,  {
       type: 'line',
      data : {
-	    labels: ["January", "February", "March", "April", "May", "June", "July"],
+	    labels: ["Lund", "Mard", "Merc", "Jeud", "Vend", "Sam", "Dim"],
 	datasets: [
 		{
-			label: "My First dataset",
+			label: "",
 			fill: false,
 			lineTension: 0.1,
 			backgroundColor: "rgba(75,192,192,0.4)",
