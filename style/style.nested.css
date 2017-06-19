@@ -97,7 +97,7 @@ a:hover {
   border: none;
   background: #eaeaea; }
 
-.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart {
+.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart, .user_profils {
   width: 570px;
   background-color: white;
   border-radius: 5px;
@@ -198,3 +198,26 @@ a:hover {
     .main_content .spotify_chart .link_for_statistique a:hover {
       color: white;
       background-color: #494c4a; }
+  .main_content .spotify_chart .link_for_statistique .example {
+    display: block;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 7%;
+    background-color: rgba(69, 69, 69, 0.68);
+    border-radius: 50px;
+    width: 9%;
+    text-align: center;
+    color: white;
+    font-weight: 200; }
+
+.user_profils .artist_thumbnails img {
+  width: 100%; }
+
+.user_profils .artist_infos_link a {
+  border: 1px solid #494c4a;
+  border-radius: 5px;
+  color: #494c4a;
+  padding: 10px; }
+  .user_profils .artist_infos_link a:hover {
+    color: white;
+    background-color: #494c4a; }

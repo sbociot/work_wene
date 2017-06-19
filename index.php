@@ -132,6 +132,7 @@
         <div class="spotify_chart">
           <span>Surveillez les écoutes de vos morceaux sur Spotify au jour le jour</span>
           <div class="link_for_statistique">
+              <span class="example">Example de Graphique</span>
             <div class="chart_canvas">
               <canvas id="myChart" height="350px" width="510"></canvas>
             </div>
@@ -141,7 +142,17 @@
           </div>
         </div>
       </li>
-      <li></li>
+      <li>
+        <div class="user_profils">
+          <span>Complétez votre profil d'artiste</span>
+          <div class="artist_thumbnails"><img src="images/profil_artiste.jpg" alt="">
+              <p>Vous pouvez utiliser votre profil d'artiste pour vous auto-promouvoir et partager votre musique avec vos fans et nos pros.</p>
+          </div>
+          <div class="artist_infos_link">
+            <a href="#">Voir les profils de nos pros</a>
+          </div>
+        </div>
+      </li>
       <li></li>
     </ul>
   </div>
