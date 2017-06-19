@@ -27,4 +27,56 @@
  			</nav>
  		</div>
 </div>
+<div class="main_content">
+  <div class="content">
+    <ul class="content_wrapper">
+      <li>
+        <div class="project">
+          <span>Statut de vos projets</span>
+            <hr></hr>
+              <div class="project_status">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="top_bar_status">
+                <span>2</span>
+                <span>Projets incomplets</span>
+                <span><a href="#">Visualiser tout</a></span>
+              </div>
+              <div class="status_content_wrapper">
+                <div class="status_image">
+                  <img src="images/no-image-small (1).jpg" alt="Stat">
+                </div>
+                <div class="status_infos">
+                  <span> Untitle</span>
+                    <p>Ce projet n'a pas été complété. Cliquez sur Continuer pour le terminer et le distribuer sur les plateformes.</p>
+                    <a href="#">Continuer</a>
+                </div>
+              </div>
+              <div class="projet_encour">
+                <span>0</span>
+                <span>Projets en cours de distribution</span>
+                <span><a href="#">Visualiser Tout</a></span>
+              </div>
+              <hr>
+              <div class="projet_disponible">
+                <span>0</span>
+                <span>Projets disponibles sur les plateformes digitales</span>
+                <span><a href="#">Visualiser Tout</a></span>
+              </div>
+              <hr>
+              <div class="vos_projets">
+                <a href="#">Visualiser Mes projets</a>
+              </div>
+          </div>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</div>
 <?php require 'views/footer.php'; ?>
