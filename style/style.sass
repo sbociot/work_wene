@@ -1,3 +1,4 @@
+@import "media-queries"
 *
   margin: 0
   padding: 0
@@ -12,8 +13,10 @@ a:hover
 .header_container
   background-color: #494c4a
   height: 56px
-  transition: all ease-in-out .5s
+  transition: ease .5s
   width: 100%
+  position: fixed
+  top: 0px
   .menu-toggle
     padding: 1.8em
     position: absolute
@@ -51,7 +54,8 @@ a:hover
 // side navigation
 .mysideNav
   width: 200px
-  position: absolute
+  position: fixed
+  top: 0px
   background: white
   margin-left: -200px
   transition: ease .2s
@@ -80,9 +84,18 @@ a:hover
         color: white
 
 
+
     a
       color: #6a6a6a
+      text-align: center
+      .fa
+        margin: 10px
 
+.side_nav_open
+  margin-left: 0
+  transition: ease .5s
+.push_content
+  padding-left: 200px
 // hambueder menu styling
 .open_sideNav
   margin-left: 200px
@@ -118,10 +131,10 @@ a:hover
   margin-top: 2.5%
   transition: ease .2s
   .content
-    width: 950px
+    width: 1000px
     margin: 0 auto
-    // background-color: red
-    transition:  ease .2s
+    transition:  ease .7s
+    margin-top: 7.5%
     .content_wrapper
       li
         list-style-type: none
@@ -215,6 +228,8 @@ a:hover
       padding: 10px
       margin-bottom: 1.5%
       color: #4c4e4d
+      &:hover
+        color: white
     .link_for_statistique
         a
             border: 1px solid #494c4a
@@ -258,8 +273,11 @@ a:hover
             color: white
             background-color: #494c4a
 .social_media_merge
+  width: 380px
   li
       list-style: none
+      width: 100%
+      margin-bottom: 10%
 .header_title_activity
     @extend .box_normalize
     width: 380px
@@ -298,3 +316,57 @@ a:hover
         &:hover
           color: white
           background-color: #494c4a
+.social_media
+  .social_media_info
+      @extend .box_normalize
+      width: 380px
+      .media_sociaux
+        padding: 10px
+        font-size: 18px
+        font-weight: 400
+        display: block
+      p
+        padding: 10px
+      .music_platform
+        background-color: #f0f0f0
+        border-radius: 5px
+        padding: 10px
+        .fa:first-of-type
+          background-color: #e62117
+          padding: 10px
+          border-radius: 50%
+        .fa
+          width: 71px
+          text-align: center
+          margin: 1.5%
+          padding: 10px
+      .fa:nth-of-type(2)
+        background-color: #ff6e00
+        border-radius: 50%
+      .fa:nth-of-type(3)
+        background-color: #1da1f2
+        border-radius: 50%
+      .fa:last-of-type
+        background-color: #3b5998
+        border-radius: 50%
+  .platform_social_link
+    margin-top: 5.5%;
+    margin-bottom: 2.5%;
+    a
+      border: 1px solid #494c4a
+      border-radius: 5px
+      color: #494c4a
+      padding: 10px
+      &:hover
+        color: white
+        background-color: #494c4a
+
+
+.content
+  ul
+    float: left
+    margin-left: 2%
+    // responsive
+@include mq($max-width: 400px)
+    .top-menu
+      display: none

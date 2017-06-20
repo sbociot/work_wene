@@ -1,4 +1,21 @@
 <?php require 'views/header.php'; ?>
+<div class="mysideNav" >
+   <h1><span>SPINN</span><span>UP</span></h1>
+   <nav class="vertical_nav">
+     <ul class="menu">
+       <li><a href=""><i class="fa fa-file-text-o" style="font-size:24px"></i>Vue d'ensemble</a></li>
+       <li><a href=""><i class="fa fa-line-chart" style="font-size:24px"></i>Activités et stats</a></li>
+       <li><a href=""><i class="fa fa-bar-chart" style="font-size:24px"></i>Mes projets</a></li>
+       <li><a href=""><i class="fa fa-user-o" style="font-size:24px"></i>Profil d'artiste</a></li>
+       <li><a href=""><i class="fa fa-music" style="font-size:24px"></i>Les Pros</a></li>
+       <li><a href=""><i class="fa fa-file-o" style="font-size:24px"></i>Offres Partenariats</a></li>
+       <li><a href=""><i class="fa fa-newspaper-o" style="font-size:24px"></i>Actualités</a></li>
+       <li><a href="">+ Nouveau Projets</a></li>
+       <li><a href=""><i class="fa fa-cogs" style="font-size:24px"></i>Parametres</a></li>
+       <li><a href=""><i class="fa fa-user-plus" style="font-size:24px"></i>Deconnexion</a></li>
+     </ul>
+   </nav>
+ </div>
 <div class="header_container">
   <div class="menu-toggle">
      <div class="hamburger"></div>
@@ -9,24 +26,7 @@
        <li><a href="#">Aide / FAQ</a></li>
      </ul>
    </nav>
-   <div class="mysideNav" >
- 			<h1><span>SPINN</span><span>UP</span></h1>
- 			<nav class="vertical_nav">
- 				<ul class="menu">
- 					<li><a href=""><i class="fa fa-file-text-o" style="font-size:24px"></i>Vue d'ensemble</a></li>
- 					<li><a href=""><i class="fa fa-line-chart" style="font-size:24px"></i>Activités et stats</a></li>
- 					<li><a href=""><img src="images/pie-chart.png" alt="notes">Mes projets</a></li>
- 					<li><a href=""><i class="material-icons" style="font-size:24px">person_outline</i>Profil d'artiste</a></li>
- 					<li><a href=""><img src="images/music.png" alt="notes">Les Pros</a></li>
- 					<li><a href=""><img src="images/discount.png" alt="notes">Offres Partenariats</a></li>
- 					<li><a href=""><img src="images/news-actualization-day-on-reminder-calendar-page.png" alt="notes">Actualités</a></li>
- 					<li><a href="">+ Nouveau Projets</a></li>
- 					<li><a href=""><img src="images/settings.png" alt="notes">Parametres</a></li>
- 					<li><a href=""><img src="images/logout-sign-with-leftwards-arrow.png" alt="notes">Deconnexion</a></li>
- 				</ul>
- 			</nav>
- 		</div>
-</div>
+  </div>
 <div class="main_content">
   <div class="content">
     <ul class="content_wrapper">
@@ -174,7 +174,30 @@
         </div>
 
       </li>
-      <li></li>
+      <li>
+        <div class="social_media">
+          <div class="social_media_info">
+            <span class="media_sociaux">Associer les comptes de vos réseaux sociaux</span>
+            <p>
+              Associer les comptes de vos réseaux sociaux vous permet
+               d’avoir une vue d’ensemble de vos fans en un seul et même
+               endroit. Même si vous n’êtes pas encore prêt(e) à créer un single
+                EP ou album, il est judicieux d’associer les comptes de vos différents
+                réseaux sociaux pour attirer plus facilement l’attention de nos pros.</p>
+                <div class="music_platform">
+                  <i class="fa fa-youtube" style="font-size:40px;color:white"></i>
+                  <i class="fa fa-soundcloud" style="font-size:40px;color:white"></i>
+                  <i class="fa fa-twitter" style="font-size:40px;color:white"></i>
+                  <i class="fa fa-facebook" style="font-size:40px;color:white"></i>
+                </div>
+                <div class="platform_social_link">
+                  <a href="#">
+                    <span>Connectez vos résaux sociaux</span>
+                  </a>
+                </div></div>
+          </div>
+
+      </li>
     </ul>
   </div>
 </div>

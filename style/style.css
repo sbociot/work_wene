@@ -15,8 +15,10 @@ a:hover {
 .header_container {
   background-color: #494c4a;
   height: 56px;
-  transition: all ease-in-out .5s;
+  transition: ease .5s;
   width: 100%;
+  position: fixed;
+  top: 0px;
 }
 
 .header_container .menu-toggle {
@@ -70,7 +72,8 @@ a:hover {
 
 .mysideNav {
   width: 200px;
-  position: absolute;
+  position: fixed;
+  top: 0px;
   background: white;
   margin-left: -200px;
   transition: ease .2s;
@@ -112,6 +115,20 @@ a:hover {
 
 .mysideNav .menu a {
   color: #6a6a6a;
+  text-align: center;
+}
+
+.mysideNav .menu a .fa {
+  margin: 10px;
+}
+
+.side_nav_open {
+  margin-left: 0;
+  transition: ease .5s;
+}
+
+.push_content {
+  padding-left: 200px;
 }
 
 .open_sideNav {
@@ -142,7 +159,7 @@ a:hover {
   background: #eaeaea;
 }
 
-.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart, .user_profils, .header_title_activity {
+.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart, .user_profils, .header_title_activity, .social_media .social_media_info {
   width: 570px;
   background-color: white;
   border-radius: 5px;
@@ -161,9 +178,10 @@ a:hover {
 }
 
 .main_content .content {
-  width: 950px;
+  width: 1000px;
   margin: 0 auto;
-  transition: ease .2s;
+  transition: ease .7s;
+  margin-top: 7.5%;
 }
 
 .main_content .content .content_wrapper li {
@@ -287,6 +305,10 @@ a:hover {
   color: #4c4e4d;
 }
 
+.main_content .spotify_chart span:hover {
+  color: white;
+}
+
 .main_content .spotify_chart .link_for_statistique a {
   border: 1px solid #494c4a;
   border-radius: 5px;
@@ -339,8 +361,14 @@ a:hover {
   background-color: #494c4a;
 }
 
+.social_media_merge {
+  width: 380px;
+}
+
 .social_media_merge li {
   list-style: none;
+  width: 100%;
+  margin-bottom: 10%;
 }
 
 .header_title_activity {
@@ -400,4 +428,81 @@ a:hover {
 .header_title_activity .link_for_pro a:hover {
   color: white;
   background-color: #494c4a;
+}
+
+.social_media .social_media_info {
+  width: 380px;
+}
+
+.social_media .social_media_info .media_sociaux {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+}
+
+.social_media .social_media_info p {
+  padding: 10px;
+}
+
+.social_media .social_media_info .music_platform {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.social_media .social_media_info .music_platform .fa:first-of-type {
+  background-color: #e62117;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social_media .social_media_info .music_platform .fa {
+  width: 71px;
+  text-align: center;
+  margin: 1.5%;
+  padding: 10px;
+}
+
+.social_media .social_media_info .fa:nth-of-type(2) {
+  background-color: #ff6e00;
+  border-radius: 50%;
+}
+
+.social_media .social_media_info .fa:nth-of-type(3) {
+  background-color: #1da1f2;
+  border-radius: 50%;
+}
+
+.social_media .social_media_info .fa:last-of-type {
+  background-color: #3b5998;
+  border-radius: 50%;
+}
+
+.social_media .platform_social_link {
+  margin-top: 5.5%;
+  margin-bottom: 2.5%;
+}
+
+.social_media .platform_social_link a {
+  border: 1px solid #494c4a;
+  border-radius: 5px;
+  color: #494c4a;
+  padding: 10px;
+}
+
+.social_media .platform_social_link a:hover {
+  color: white;
+  background-color: #494c4a;
+}
+
+.content ul {
+  float: left;
+  margin-left: 2%;
+}
+
+@media only screen and (max-width: 400px) {
+  .top-menu {
+    display: none;
+  }
 }
