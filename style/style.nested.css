@@ -25,7 +25,8 @@ a:hover {
     width: 2em;
     border-radius: 3px;
     content: '';
-    display: block; }
+    display: block;
+    transition: ease .2s; }
     .header_container .hamburger::before {
       transform: translateY(8px); }
     .header_container .hamburger::after {
@@ -97,7 +98,7 @@ a:hover {
   border: none;
   background: #eaeaea; }
 
-.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart, .user_profils {
+.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart, .user_profils, .header_title_activity {
   width: 570px;
   background-color: white;
   border-radius: 5px;
@@ -109,7 +110,8 @@ a:hover {
 
 .main_content {
   width: auto;
-  margin-top: 2.5%; }
+  margin-top: 2.5%;
+  transition: ease .2s; }
   .main_content .content {
     width: 950px;
     margin: 0 auto;
@@ -189,7 +191,8 @@ a:hover {
       background-color: #494c4a; }
   .main_content .spotify_chart span {
     padding: 10px;
-    margin-bottom: 1.5%; }
+    margin-bottom: 1.5%;
+    color: #4c4e4d; }
   .main_content .spotify_chart .link_for_statistique a {
     border: 1px solid #494c4a;
     border-radius: 5px;
@@ -210,6 +213,15 @@ a:hover {
     color: white;
     font-weight: 200; }
 
+.user_profils span {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4c4e4d; }
+
+.user_profils .artist_thumbnails p {
+  padding: 10px; }
+
 .user_profils .artist_thumbnails img {
   width: 100%; }
 
@@ -221,3 +233,42 @@ a:hover {
   .user_profils .artist_infos_link a:hover {
     color: white;
     background-color: #494c4a; }
+
+.social_media_merge li {
+  list-style: none; }
+
+.header_title_activity {
+  width: 380px; }
+  .header_title_activity span {
+    padding: 10px; }
+  .header_title_activity .activity_thumbnails {
+    width: 100%;
+    margin-top: 2%; }
+    .header_title_activity .activity_thumbnails .image_activity_container {
+      vertical-align: middle;
+      padding: 10px; }
+      .header_title_activity .activity_thumbnails .image_activity_container img {
+        width: 100%;
+        vertical-align: super; }
+  .header_title_activity .reference {
+    width: 75%;
+    vertical-align: middle; }
+    .header_title_activity .reference p {
+      width: 100%; }
+  .header_title_activity .music_activity {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px; }
+    .header_title_activity .music_activity div {
+      display: inline-block; }
+  .header_title_activity .link_for_pro {
+    padding: 10px 10px 10px 1px;
+    margin-top: 3%; }
+    .header_title_activity .link_for_pro a {
+      border: 1px solid #494c4a;
+      border-radius: 5px;
+      color: #494c4a;
+      padding: 10px; }
+      .header_title_activity .link_for_pro a:hover {
+        color: white;
+        background-color: #494c4a; }

@@ -153,6 +153,27 @@
           </div>
         </div>
       </li>
+    </ul>
+    <ul class="social_media_merge">
+      <li>
+        <div class="header_title_activity">
+          <span>Activité des pros</span>
+          <div class="activity_thumbnails">
+            <div class="music_activity">
+              <div class="image_activity_container">
+                <img src="images/listening.png" alt="Listening">
+              </div>
+              <div class="reference">
+                <p>Si un pro consulte votre profil ou écoute votre musique, vous en serez informé(e) ici.</p>
+              </div>
+          </div>
+            </div>
+            <div class="link_for_pro">
+                <a href="#"><span>Visualiser l’activité des pros</span></a>
+            </div>
+        </div>
+
+      </li>
       <li></li>
     </ul>
   </div>
