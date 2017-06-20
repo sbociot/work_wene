@@ -102,6 +102,7 @@ a:hover {
 
 .mysideNav .menu li {
   padding: 10px;
+  list-style: none;
 }
 
 .mysideNav .menu li:nth-of-type(8) {
@@ -123,12 +124,12 @@ a:hover {
 }
 
 .side_nav_open {
-  margin-left: 0;
+  margin-left: -200px;
   transition: ease .5s;
 }
 
-.push_content {
-  padding-left: 200px;
+.width_header {
+  width: 90%;
 }
 
 .open_sideNav {
