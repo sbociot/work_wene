@@ -2,29 +2,7 @@
 
 body { background-color: #f0f0f0; }
 
-a:hover { text-decoration: none; }
-
-.header_container { background-color: #494c4a; height: 56px; transition: ease .5s; width: 100%; position: fixed; top: 0px; }
-
-.header_container .menu-toggle { padding: 1.8em; position: absolute; cursor: pointer; height: 56px; }
-
-.header_container .hamburger, .header_container .hamburger::before, .header_container .hamburger::after { background: white; height: 3px; width: 2em; border-radius: 3px; content: ''; display: block; transition: ease .2s; }
-
-.header_container .hamburger::before { transform: translateY(8px); }
-
-.header_container .hamburger::after { transform: translateY(-11px); }
-
-.site-top-nav { width: 300px; position: absolute; right: 1%; top: 1%; }
-
-.site-top-nav .top-menu { padding: 10px; }
-
-.site-top-nav .top-menu li { list-style: none; display: inline-block; }
-
-.site-top-nav .top-menu li a { color: white; }
-
-.site-top-nav .top-menu li a:hover { text-decoration: none; }
-
-.mysideNav { width: 200px; position: fixed; top: 0px; background: white; margin-left: -200px; transition: ease .2s; height: 100%; }
+.mysideNav { height: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: white; transition: .3s; width: 200px; margin-left: -200px; }
 
 .mysideNav h1 { font-size: 30px; font-weight: bold; color: #575756; text-align: center; border-bottom: 1px solid #eaeaea; padding: 20px; }
 
@@ -42,79 +20,217 @@ a:hover { text-decoration: none; }
 
 .mysideNav .menu a .fa { margin: 10px; }
 
-.side_nav_open { margin-left: -200px; transition: ease .5s; }
+.handler { background-color: #4a4c4b; height: 55px; }
 
-.width_header { width: 90%; }
+.handler .top-menu { margin-left: 0; transition: margin-left .3s; }
 
-.open_sideNav { margin-left: 200px; width: 90%; }
+.handler .menu-toggle { padding: 1.8em; position: absolute; cursor: pointer; height: 56px; }
 
-.open_sideNav .hamburger, .open_sideNav .header_container .hamburger::before, .header_container .open_sideNav .hamburger::before, .open_sideNav .header_container .hamburger::after, .header_container .open_sideNav .hamburger::after { transform: rotate(360deg); transition: ease .2s; }
+.handler .hamburger, .handler .hamburger::before, .handler .hamburger::after { background: white; height: 3px; width: 2em; border-radius: 3px; content: ''; display: block; transition: ease .3s; transform: rotate(-360deg); }
 
-.open_sideNav .hamburger::before { width: 50%; top: 0; transform: translateX(-2px) translateY(4px) rotate(45deg); }
+.handler .hamburger::before { transform: translateY(8px); }
 
-.open_sideNav .hamburger::after { width: 50%; bottom: 0; transform: translateX(-1px) translateY(-7.8px) rotate(-45deg); }
+.handler .hamburger::after { transform: translateY(-11px); }
 
-.hr_normalize, .main_content .content .content_wrapper li .project hr { height: 2px; border: none; background: #eaeaea; }
+.handler .site-top-nav { float: right; }
 
-.box_normalize, .main_content .content .content_wrapper li .project, .main_content .start_info, .main_content .section_pro, .main_content .spotify_chart, .user_profils, .header_title_activity, .social_media .social_media_info { width: 570px; background-color: white; border-radius: 5px; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.07); padding: 10px; }
+.handler .site-top-nav .top-menu_flat li { list-style: none; display: inline-block; }
 
-.text_color, .main_content .start_info .start_link_info_plus a:first-of-type, .main_content .start_info .start_link_info_plus a:not(:first-of-type) { color: #494c4a; }
+.slide_content { margin-left: 200px; }
 
-.main_content { width: auto; margin-top: 2.5%; transition: ease .2s; }
+.open_sideNav { margin-left: 0px; }
 
-.main_content .content { width: 1000px; margin: 0 auto; transition: ease .7s; margin-top: 7.5%; }
+.hamburger_open { transform: rotate(360deg); transition: ease .3s; }
 
-.main_content .content .content_wrapper li { list-style-type: none; width: 570px; margin-bottom: 2.5%; }
+.hamburger_open .hamburger::before { width: 50%; top: 0; transform: translateX(-2px) translateY(4px) rotate(45deg); }
 
-.main_content .content .content_wrapper li div { padding: 10px; }
+.hamburger_open .hamburger::after { width: 50%; bottom: 0; transform: translateX(-1px) translateY(-7.8px) rotate(-45deg); }
 
-.main_content .content .content_wrapper li .project span { font-size: 1.8rem; font-weight: 400; }
+.hamburger_open .hr_normalize, .hamburger_open .content .content_wrapper li .project hr, .main .content .content_wrapper li .project .hamburger_open hr { height: 2px; border: none; background: #eaeaea; }
 
-.main_content .content .content_wrapper li .top_bar_status { padding: 10px; margin-bottom: 10px; }
+.hamburger_open .box_normalize, .hamburger_open .content .content_wrapper li .project, .hamburger_open .start_info, .hamburger_open .section_pro, .hamburger_open .spotify_chart, .hamburger_open .social_media_info, .main .content .content_wrapper li .hamburger_open .project, .hamburger_open .user_profils, .hamburger_open .header_title_activity { width: 570px; background-color: white; border-radius: 5px; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.07); padding: 10px; }
 
-.main_content .content .content_wrapper li .status_image { width: 172px; }
+.hamburger_open .text_color, .hamburger_open .start_info .start_link_info_plus a:first-of-type, .hamburger_open .start_info .start_link_info_plus a:not(:first-of-type), .main .start_info .start_link_info_plus .hamburger_open a:first-of-type, .main .start_info .start_link_info_plus .hamburger_open a:not(:first-of-type) { color: #494c4a; }
 
-.main_content .content .content_wrapper li .status_infos { width: 300px; padding: 10px; vertical-align: top; margin-left: 2.5%; }
+.hamburger_open .content { width: 1000px; margin: 0 auto; transition: ease .7s; margin-top: 7.5%; }
 
-.main_content .content .content_wrapper li .status_infos a { background-color: #e71864; color: white; border-radius: 5px; font-weight: 200; padding: 10px; }
+.hamburger_open .content .content_wrapper li { list-style-type: none; width: 570px; margin-bottom: 2.5%; }
 
-.main_content .content .content_wrapper li .status_infos a:hover { background-color: #ec4d88; text-decoration: none; }
+.hamburger_open .content .content_wrapper li div { padding: 10px; }
 
-.main_content .content .content_wrapper li .status_content_wrapper { background-color: #f0f0f0; border-radius: 5px; padding: 10px; }
+.hamburger_open .content .content_wrapper li .project span { font-size: 1.8rem; font-weight: 400; }
 
-.main_content .content .content_wrapper li .status_content_wrapper div { display: inline-block; }
+.hamburger_open .content .content_wrapper li .top_bar_status { padding: 10px; margin-bottom: 10px; }
 
-.main_content .content .content_wrapper .vos_projets a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+.hamburger_open .content .content_wrapper li .status_image { width: 172px; }
 
-.main_content .content .content_wrapper .vos_projets a:hover { color: white; background-color: #494c4a; }
+.hamburger_open .content .content_wrapper li .status_infos { width: 300px; padding: 10px; vertical-align: top; margin-left: 2.5%; }
 
-.main_content .start_info span { padding: 10px; }
+.hamburger_open .content .content_wrapper li .status_infos a { background-color: #e71864; color: white; border-radius: 5px; font-weight: 200; padding: 10px; }
 
-.main_content .start_info p { padding: 10px; }
+.hamburger_open .content .content_wrapper li .status_infos a:hover { background-color: #ec4d88; text-decoration: none; }
 
-.main_content .start_info .start_link_info_plus a:first-of-type { background: #def6dc; display: block; border-radius: 5px; padding: 10px; margin-bottom: 1.5%; }
+.hamburger_open .content .content_wrapper li .status_content_wrapper { background-color: #f0f0f0; border-radius: 5px; padding: 10px; }
 
-.main_content .start_info .start_link_info_plus span { padding: 10px; }
+.hamburger_open .content .content_wrapper li .status_content_wrapper div { display: inline-block; }
 
-.main_content .start_info .start_link_info_plus a:not(:first-of-type) { background-color: #feeef3; display: block; padding: 10px; margin-bottom: 1.5%; border-radius: 5px; }
+.hamburger_open .content .content_wrapper .vos_projets a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
 
-.main_content .start_info .start_link_info_plus a:not(:first-of-type) span { padding: 10px; }
+.hamburger_open .content .content_wrapper .vos_projets a:hover { color: white; background-color: #494c4a; }
 
-.main_content .section_pro span { font-weight: bold; padding: 10px; }
+.hamburger_open .start_info span { padding: 10px; }
 
-.main_content .section_pro .pro_infos_link a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+.hamburger_open .start_info p { padding: 10px; }
 
-.main_content .section_pro .pro_infos_link a:hover { color: white; background-color: #494c4a; }
+.hamburger_open .start_info .start_link_info_plus a:first-of-type { background: #def6dc; display: block; border-radius: 5px; padding: 10px; margin-bottom: 1.5%; }
 
-.main_content .spotify_chart span { padding: 10px; margin-bottom: 1.5%; color: #4c4e4d; }
+.hamburger_open .start_info .start_link_info_plus span { padding: 10px; }
 
-.main_content .spotify_chart span:hover { color: white; }
+.hamburger_open .start_info .start_link_info_plus a:not(:first-of-type) { background-color: #feeef3; display: block; padding: 10px; margin-bottom: 1.5%; border-radius: 5px; }
 
-.main_content .spotify_chart .link_for_statistique a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+.hamburger_open .start_info .start_link_info_plus a:not(:first-of-type) span { padding: 10px; }
 
-.main_content .spotify_chart .link_for_statistique a:hover { color: white; background-color: #494c4a; }
+.hamburger_open .section_pro span { font-weight: bold; padding: 10px; }
 
-.main_content .spotify_chart .link_for_statistique .example { display: block; position: absolute; margin-left: 8%; margin-top: 7%; background-color: rgba(69, 69, 69, 0.68); border-radius: 50px; width: 9%; text-align: center; color: white; font-weight: 200; }
+.hamburger_open .section_pro .pro_infos_link a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.hamburger_open .section_pro .pro_infos_link a:hover { color: white; background-color: #494c4a; }
+
+.hamburger_open .spotify_chart span { padding: 10px; margin-bottom: 1.5%; color: #4c4e4d; }
+
+.hamburger_open .spotify_chart span:hover { color: white; }
+
+.hamburger_open .spotify_chart .link_for_statistique a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.hamburger_open .spotify_chart .link_for_statistique a:hover { color: white; background-color: #494c4a; }
+
+.hamburger_open .spotify_chart .link_for_statistique .example { display: block; position: absolute; margin-left: 8%; margin-top: 7%; background-color: rgba(69, 69, 69, 0.68); border-radius: 50px; width: 9%; text-align: center; color: white; font-weight: 200; }
+
+.hamburger_open .user_profils span { padding: 10px; font-size: 20px; font-weight: 400; color: #4c4e4d; }
+
+.hamburger_open .user_profils .artist_thumbnails p { padding: 10px; }
+
+.hamburger_open .user_profils .artist_thumbnails img { width: 100%; }
+
+.hamburger_open .user_profils .artist_infos_link a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.hamburger_open .user_profils .artist_infos_link a:hover { color: white; background-color: #494c4a; }
+
+.hamburger_open .social_media_merge { width: 380px; }
+
+.hamburger_open li { list-style: none; width: 100%; margin-bottom: 10%; }
+
+.hamburger_open .header_title_activity { width: 380px; }
+
+.hamburger_open .header_title_activity span { padding: 10px; }
+
+.hamburger_open .header_title_activity .activity_thumbnails { width: 100%; margin-top: 2%; }
+
+.hamburger_open .header_title_activity .activity_thumbnails .image_activity_container { vertical-align: middle; padding: 10px; }
+
+.hamburger_open .header_title_activity .activity_thumbnails .image_activity_container img { width: 100%; vertical-align: super; }
+
+.hamburger_open .header_title_activity .reference { width: 75%; vertical-align: middle; }
+
+.hamburger_open .header_title_activity .reference p { width: 100%; }
+
+.hamburger_open .header_title_activity .music_activity { background-color: #f0f0f0; border-radius: 5px; padding: 10px; }
+
+.hamburger_open .header_title_activity .music_activity div { display: inline-block; }
+
+.hamburger_open .header_title_activity .link_for_pro { padding: 10px 10px 10px 1px; margin-top: 3%; }
+
+.hamburger_open .header_title_activity .link_for_pro a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.hamburger_open .header_title_activity .link_for_pro a:hover { color: white; background-color: #494c4a; }
+
+.hamburger_open .social_media_info { width: 380px; }
+
+.hamburger_open .social_media_info .media_sociaux { padding: 10px; font-size: 18px; font-weight: 400; display: block; }
+
+.hamburger_open .social_media_info p { padding: 10px; }
+
+.hamburger_open .social_media_info .music_platform { background-color: #f0f0f0; border-radius: 5px; padding: 10px; }
+
+.hamburger_open .social_media_info .music_platform .fa:first-of-type { background-color: #e62117; padding: 10px; border-radius: 50%; }
+
+.hamburger_open .social_media_info .music_platform .fa { width: 71px; text-align: center; margin: 1.5%; padding: 10px; }
+
+.hamburger_open .social_media_info .fa:nth-of-type(2) { background-color: #ff6e00; border-radius: 50%; }
+
+.hamburger_open .social_media_info .fa:nth-of-type(3) { background-color: #1da1f2; border-radius: 50%; }
+
+.hamburger_open .social_media_info .fa:last-of-type { background-color: #3b5998; border-radius: 50%; }
+
+.hamburger_open .platform_social_link { margin-top: 5.5%; margin-bottom: 2.5%; }
+
+.hamburger_open .platform_social_link a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.hamburger_open .platform_social_link a:hover { color: white; background-color: #494c4a; }
+
+.hamburger_open ul { float: left; margin-left: 2%; }
+
+.hr_normalize, .hamburger_open .content .content_wrapper li .project hr, .main .content .content_wrapper li .project hr { height: 2px; border: none; background: #eaeaea; }
+
+.box_normalize, .hamburger_open .content .content_wrapper li .project, .hamburger_open .start_info, .hamburger_open .section_pro, .hamburger_open .spotify_chart, .hamburger_open .user_profils, .hamburger_open .header_title_activity, .hamburger_open .social_media_info, .main .content .content_wrapper li .project, .main .start_info, .main .section_pro, .main .spotify_chart, .user_profils, .header_title_activity, .social_media .social_media_info { width: 570px; background-color: white; border-radius: 5px; box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.07); padding: 10px; }
+
+.text_color, .hamburger_open .start_info .start_link_info_plus a:first-of-type, .hamburger_open .start_info .start_link_info_plus a:not(:first-of-type), .main .start_info .start_link_info_plus a:first-of-type, .main .start_info .start_link_info_plus a:not(:first-of-type) { color: #494c4a; }
+
+.main { transition: .3s; }
+
+.main .content { width: 1000px; margin: 0 auto; transition: ease .7s; margin-top: 55px; }
+
+.main .content .content_wrapper li { list-style-type: none; width: 570px; margin-bottom: 2.5%; }
+
+.main .content .content_wrapper li div { padding: 10px; }
+
+.main .content .content_wrapper li .project span { font-size: 1.8rem; font-weight: 400; }
+
+.main .content .content_wrapper li .top_bar_status { padding: 10px; margin-bottom: 10px; }
+
+.main .content .content_wrapper li .status_image { width: 172px; }
+
+.main .content .content_wrapper li .status_infos { width: 300px; padding: 10px; vertical-align: top; margin-left: 2.5%; }
+
+.main .content .content_wrapper li .status_infos a { background-color: #e71864; color: white; border-radius: 5px; font-weight: 200; padding: 10px; }
+
+.main .content .content_wrapper li .status_infos a:hover { background-color: #ec4d88; text-decoration: none; }
+
+.main .content .content_wrapper li .status_content_wrapper { background-color: #f0f0f0; border-radius: 5px; padding: 10px; }
+
+.main .content .content_wrapper li .status_content_wrapper div { display: inline-block; }
+
+.main .content .content_wrapper .vos_projets a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.main .content .content_wrapper .vos_projets a:hover { color: white; background-color: #494c4a; }
+
+.main .start_info span { padding: 10px; }
+
+.main .start_info p { padding: 10px; }
+
+.main .start_info .start_link_info_plus a:first-of-type { background: #def6dc; display: block; border-radius: 5px; padding: 10px; margin-bottom: 1.5%; }
+
+.main .start_info .start_link_info_plus span { padding: 10px; }
+
+.main .start_info .start_link_info_plus a:not(:first-of-type) { background-color: #feeef3; display: block; padding: 10px; margin-bottom: 1.5%; border-radius: 5px; }
+
+.main .start_info .start_link_info_plus a:not(:first-of-type) span { padding: 10px; }
+
+.main .section_pro span { font-weight: bold; padding: 10px; }
+
+.main .section_pro .pro_infos_link a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.main .section_pro .pro_infos_link a:hover { color: white; background-color: #494c4a; }
+
+.main .spotify_chart span { padding: 10px; margin-bottom: 1.5%; color: #4c4e4d; }
+
+.main .spotify_chart span:hover { color: white; }
+
+.main .spotify_chart .link_for_statistique a { border: 1px solid #494c4a; border-radius: 5px; color: #494c4a; padding: 10px; }
+
+.main .spotify_chart .link_for_statistique a:hover { color: white; background-color: #494c4a; }
+
+.main .spotify_chart .link_for_statistique .example { display: block; position: absolute; margin-left: 8%; margin-top: 7%; background-color: rgba(69, 69, 69, 0.68); border-radius: 50px; width: 9%; text-align: center; color: white; font-weight: 200; }
 
 .user_profils span { padding: 10px; font-size: 20px; font-weight: 400; color: #4c4e4d; }
 

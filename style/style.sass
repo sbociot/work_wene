@@ -6,17 +6,54 @@
 
 body
   background-color: #f0f0f0
-  // arrow left hamburger menu
 
-a:hover
-  text-decoration: none
-.header_container
-  background-color: #494c4a
-  height: 56px
-  transition: ease .5s
-  width: 100%
-  position: fixed
-  top: 0px
+
+.mysideNav
+    height: 100%
+    position: fixed
+    z-index: 1
+    top: 0
+    left: 0
+    background-color: white
+    transition: .3s
+    width: 200px
+    margin-left: -200px
+
+    h1
+      font-size: 30px
+      font-weight: bold
+      color: #575756
+      text-align: center
+      border-bottom: 1px solid #eaeaea
+      padding: 20px
+      span:first-of-type
+        border-top: 6px solid #575756
+      span:nth-of-type(2)
+        color: #EE2C6C
+        border-bottom: 6px solid #575756
+        font-size: 23px
+        vertical-align: top
+    .menu
+      li
+        padding: 10px
+        list-style: none
+      li:nth-of-type(8)
+        text-align: center
+        background-color: #EE2C6C
+        a
+          color: white
+      a
+        color: #6a6a6a
+        text-align: center
+        .fa
+          margin: 10px
+.handler
+  background-color: #4a4c4b
+  height: 55px
+  .top-menu
+    margin-left: 0
+    transition: margin-left .3s
+
   .menu-toggle
     padding: 1.8em
     position: absolute
@@ -29,85 +66,29 @@ a:hover
       border-radius: 3px
       content: ''
       display: block
-      transition: ease .2s
+      transition: ease .3s
+      transform: rotate(-360deg)
       &::before
         @extend .hamburger
         transform: translateY(8px)
       &::after
         @extend .hamburger
         transform: translateY(-11px)
-.site-top-nav
-  width: 300px
-  position: absolute
-  right: 1%
-  top: 1%
-  .top-menu
-    padding: 10px
-    li
-      list-style: none
-      display: inline-block
-      a
-        color: white
-        &:hover
-          text-decoration: none
+  .site-top-nav
+    float: right
+    .top-menu_flat
+      li
+        list-style: none
+        display: inline-block
 
-// side navigation
-.mysideNav
-  width: 200px
-  position: fixed
-  top: 0px
-  background: white
-  margin-left: -200px
-  transition: ease .2s
-  height: 100%
-  h1
-    font-size: 30px
-    font-weight: bold
-    color: #575756
-    text-align: center
-    border-bottom: 1px solid #eaeaea
-    padding: 20px
-    span:first-of-type
-      border-top: 6px solid #575756
-    span:nth-of-type(2)
-      color: #EE2C6C
-      border-bottom: 6px solid #575756
-      font-size: 23px
-      vertical-align: top
-  .menu
-    li
-      padding: 10px
-      list-style: none
-    li:nth-of-type(8)
-      text-align: center
-      background-color: #EE2C6C
-      a
-        color: white
-
-
-
-    a
-      color: #6a6a6a
-      text-align: center
-      .fa
-        margin: 10px
-
-.side_nav_open
-  margin-left: -200px
-  transition: ease .5s
-// .push_content
-//   padding-left: 200px
-// hambueder menu styling
-.width_header
-  width: 90%
-.open_sideNav
+.slide_content
   margin-left: 200px
-  width: 90%
-  .hamburger
-    transform: rotate(360deg)
-    transition: ease .2s
+.open_sideNav
+  margin-left: 0px
 
-
+.hamburger_open
+  transform: rotate(360deg)
+  transition: ease .3s
   .hamburger::before
     width: 50%
     top: 0
@@ -116,7 +97,259 @@ a:hover
     width: 50%
     bottom: 0
     transform: translateX(-1px) translateY(-7.8px) rotate(-45deg)
-// fin hambeurger
+
+
+  .hr_normalize
+    height: 2px
+    border: none
+    background: #eaeaea
+  .box_normalize
+    width: 570px
+    background-color: white
+    border-radius: 5px
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.07)
+    padding: 10px
+  .text_color
+    color: #494c4a
+
+  .content
+    width: 1000px
+    margin: 0 auto
+    transition:  ease .7s
+    margin-top: 7.5%
+    .content_wrapper
+      li
+        list-style-type: none
+        width: 570px
+        margin-bottom: 2.5%
+        div
+          padding: 10px
+        .project
+            @extend .box_normalize
+            span
+              font-size: 1.8rem
+              font-weight: 400
+            hr
+              @extend .hr_normalize
+        .top_bar_status
+          padding: 10px
+          margin-bottom: 10px
+        .status_image
+          width: 172px
+        .status_infos
+          width: 300px
+          padding: 10px
+          vertical-align: top
+          margin-left: 2.5%
+          a
+            background-color: #e71864
+            color: white
+            border-radius: 5px
+            font-weight: 200
+            padding: 10px
+            &:hover
+              background-color: #ec4d88
+              text-decoration: none
+        .status_content_wrapper
+          background-color: #f0f0f0
+          border-radius: 5px
+          padding: 10px
+          div
+            display: inline-block
+      .vos_projets
+        a
+          border: 1px solid #494c4a
+          border-radius: 5px
+          color: #494c4a
+          padding: 10px
+          &:hover
+            color: white
+            background-color: #494c4a
+  .start_info
+        @extend .box_normalize
+        span
+          padding: 10px
+        p
+          padding: 10px
+        .start_link_info_plus
+          a:first-of-type
+            background: #def6dc
+            display: block
+            border-radius: 5px
+            padding: 10px
+            margin-bottom: 1.5%
+            @extend .text_color
+          span
+              padding: 10px
+          a:not(:first-of-type)
+            background-color: #feeef3
+            display: block
+            padding: 10px
+            margin-bottom: 1.5%
+            border-radius: 5px
+            @extend .text_color
+            span
+              padding: 10px
+  .section_pro
+    @extend .box_normalize
+    span
+      font-weight: bold
+      padding: 10px
+    .pro_infos_link
+      a
+          border: 1px solid #494c4a
+          border-radius: 5px
+          color: #494c4a
+          padding: 10px
+          &:hover
+            color: white
+            background-color: #494c4a
+  .spotify_chart
+    @extend .box_normalize
+    span
+      padding: 10px
+      margin-bottom: 1.5%
+      color: #4c4e4d
+      &:hover
+        color: white
+    .link_for_statistique
+        a
+            border: 1px solid #494c4a
+            border-radius: 5px
+            color: #494c4a
+            padding: 10px
+            &:hover
+              color: white
+              background-color: #494c4a
+    .link_for_statistique
+        .example
+          display: block
+          position: absolute
+          margin-left: 8%
+          margin-top: 7%
+          background-color: rgba(69, 69, 69, 0.68)
+          border-radius: 50px
+          width: 9%
+          text-align: center
+          color: white
+          font-weight: 200
+  .user_profils
+    @extend .box_normalize
+    span
+      padding: 10px
+      font-size: 20px
+      font-weight: 400
+      color: #4c4e4d
+    .artist_thumbnails
+      p
+        padding: 10px
+      img
+        width: 100%
+    .artist_infos_link
+      a
+          border: 1px solid #494c4a
+          border-radius: 5px
+          color: #494c4a
+          padding: 10px
+          &:hover
+            color: white
+            background-color: #494c4a
+  .social_media_merge
+    width: 380px
+  li
+      list-style: none
+      width: 100%
+      margin-bottom: 10%
+  .header_title_activity
+    @extend .box_normalize
+    width: 380px
+    span
+      padding: 10px
+    .activity_thumbnails
+      width: 100%
+      margin-top: 2%
+      .image_activity_container
+        vertical-align: middle
+        padding: 10px
+        img
+          width: 100%
+          vertical-align: super
+    .reference
+      width: 75%
+      vertical-align: middle
+      p
+        width: 100%
+    .music_activity
+      background-color: #f0f0f0
+      border-radius: 5px
+      padding: 10px
+      div
+        display: inline-block
+
+
+    .link_for_pro
+      padding: 10px 10px 10px 1px;
+      margin-top: 3%;
+      a
+        border: 1px solid #494c4a
+        border-radius: 5px
+        color: #494c4a
+        padding: 10px
+        &:hover
+          color: white
+          background-color: #494c4a
+  .social_media
+  .social_media_info
+      @extend .box_normalize
+      width: 380px
+      .media_sociaux
+        padding: 10px
+        font-size: 18px
+        font-weight: 400
+        display: block
+      p
+        padding: 10px
+      .music_platform
+        background-color: #f0f0f0
+        border-radius: 5px
+        padding: 10px
+        .fa:first-of-type
+          background-color: #e62117
+          padding: 10px
+          border-radius: 50%
+        .fa
+          width: 71px
+          text-align: center
+          margin: 1.5%
+          padding: 10px
+      .fa:nth-of-type(2)
+        background-color: #ff6e00
+        border-radius: 50%
+      .fa:nth-of-type(3)
+        background-color: #1da1f2
+        border-radius: 50%
+      .fa:last-of-type
+        background-color: #3b5998
+        border-radius: 50%
+  .platform_social_link
+    margin-top: 5.5%
+    margin-bottom: 2.5%
+    a
+      border: 1px solid #494c4a
+      border-radius: 5px
+      color: #494c4a
+      padding: 10px
+      &:hover
+        color: white
+        background-color: #494c4a
+
+
+  .content
+  ul
+    float: left
+    margin-left: 2%
+    // responsive
+  @include mq($max-width: 400px)
 .hr_normalize
   height: 2px
   border: none
@@ -129,15 +362,13 @@ a:hover
   padding: 10px
 .text_color
   color: #494c4a
-.main_content
-  width: auto
-  margin-top: 2.5%
-  transition: ease .2s
+.main
+  transition:  .3s
   .content
     width: 1000px
     margin: 0 auto
     transition:  ease .7s
-    margin-top: 7.5%
+    margin-top: 55px
     .content_wrapper
       li
         list-style-type: none
