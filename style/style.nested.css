@@ -116,7 +116,8 @@ body {
         padding: 10px; }
       .hamburger_open .content .content_wrapper li .project span {
         font-size: 1.8rem;
-        font-weight: 400; }
+        font-weight: 400;
+        width: 100%; }
       .hamburger_open .content .content_wrapper li .top_bar_status {
         padding: 10px;
         margin-bottom: 10px; }
@@ -150,79 +151,87 @@ body {
       .hamburger_open .content .content_wrapper .vos_projets a:hover {
         color: white;
         background-color: #494c4a; }
-  .hamburger_open .start_info span {
-    padding: 10px; }
-  .hamburger_open .start_info p {
-    padding: 10px; }
-  .hamburger_open .start_info .start_link_info_plus a:first-of-type {
-    background: #def6dc;
-    display: block;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 1.5%; }
-  .hamburger_open .start_info .start_link_info_plus span {
-    padding: 10px; }
-  .hamburger_open .start_info .start_link_info_plus a:not(:first-of-type) {
-    background-color: #feeef3;
-    display: block;
-    padding: 10px;
-    margin-bottom: 1.5%;
-    border-radius: 5px; }
-    .hamburger_open .start_info .start_link_info_plus a:not(:first-of-type) span {
-      padding: 10px; }
-  .hamburger_open .section_pro span {
-    font-weight: bold;
-    padding: 10px; }
-  .hamburger_open .section_pro .pro_infos_link a {
-    border: 1px solid #494c4a;
-    border-radius: 5px;
-    color: #494c4a;
-    padding: 10px; }
-    .hamburger_open .section_pro .pro_infos_link a:hover {
-      color: white;
-      background-color: #494c4a; }
-  .hamburger_open .spotify_chart span {
-    padding: 10px;
-    margin-bottom: 1.5%;
-    color: #4c4e4d; }
-    .hamburger_open .spotify_chart span:hover {
-      color: white; }
-  .hamburger_open .spotify_chart .link_for_statistique a {
-    border: 1px solid #494c4a;
-    border-radius: 5px;
-    color: #494c4a;
-    padding: 10px; }
-    .hamburger_open .spotify_chart .link_for_statistique a:hover {
-      color: white;
-      background-color: #494c4a; }
-  .hamburger_open .spotify_chart .link_for_statistique .example {
-    display: block;
-    position: absolute;
-    margin-left: 8%;
-    margin-top: 7%;
-    background-color: rgba(69, 69, 69, 0.68);
-    border-radius: 50px;
-    width: 9%;
-    text-align: center;
-    color: white;
-    font-weight: 200; }
-  .hamburger_open .user_profils span {
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #4c4e4d; }
-  .hamburger_open .user_profils .artist_thumbnails p {
-    padding: 10px; }
-  .hamburger_open .user_profils .artist_thumbnails img {
+  .hamburger_open .start_info {
     width: 100%; }
-  .hamburger_open .user_profils .artist_infos_link a {
-    border: 1px solid #494c4a;
-    border-radius: 5px;
-    color: #494c4a;
-    padding: 10px; }
-    .hamburger_open .user_profils .artist_infos_link a:hover {
+    .hamburger_open .start_info span {
+      padding: 10px; }
+    .hamburger_open .start_info p {
+      padding: 10px; }
+    .hamburger_open .start_info .start_link_info_plus a:first-of-type {
+      background: #def6dc;
+      display: block;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 1.5%; }
+    .hamburger_open .start_info .start_link_info_plus span {
+      padding: 10px; }
+    .hamburger_open .start_info .start_link_info_plus a:not(:first-of-type) {
+      background-color: #feeef3;
+      display: block;
+      padding: 10px;
+      margin-bottom: 1.5%;
+      border-radius: 5px; }
+      .hamburger_open .start_info .start_link_info_plus a:not(:first-of-type) span {
+        padding: 10px; }
+  .hamburger_open .section_pro {
+    width: 100%; }
+    .hamburger_open .section_pro span {
+      font-weight: bold;
+      padding: 10px; }
+    .hamburger_open .section_pro .pro_infos_link a {
+      border: 1px solid #494c4a;
+      border-radius: 5px;
+      color: #494c4a;
+      padding: 10px; }
+      .hamburger_open .section_pro .pro_infos_link a:hover {
+        color: white;
+        background-color: #494c4a; }
+  .hamburger_open .spotify_chart {
+    width: 100%; }
+    .hamburger_open .spotify_chart span {
+      padding: 10px;
+      margin-bottom: 1.5%;
+      color: #4c4e4d; }
+      .hamburger_open .spotify_chart span:hover {
+        color: white; }
+    .hamburger_open .spotify_chart .link_for_statistique a {
+      border: 1px solid #494c4a;
+      border-radius: 5px;
+      color: #494c4a;
+      padding: 10px; }
+      .hamburger_open .spotify_chart .link_for_statistique a:hover {
+        color: white;
+        background-color: #494c4a; }
+    .hamburger_open .spotify_chart .link_for_statistique .example {
+      display: block;
+      position: absolute;
+      margin-left: 8%;
+      margin-top: 7%;
+      background-color: rgba(69, 69, 69, 0.68);
+      border-radius: 50px;
+      width: 9%;
+      text-align: center;
       color: white;
-      background-color: #494c4a; }
+      font-weight: 200; }
+  .hamburger_open .user_profils {
+    width: 100%; }
+    .hamburger_open .user_profils span {
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #4c4e4d; }
+    .hamburger_open .user_profils .artist_thumbnails p {
+      padding: 10px; }
+    .hamburger_open .user_profils .artist_thumbnails img {
+      width: 100%; }
+    .hamburger_open .user_profils .artist_infos_link a {
+      border: 1px solid #494c4a;
+      border-radius: 5px;
+      color: #494c4a;
+      padding: 10px; }
+      .hamburger_open .user_profils .artist_infos_link a:hover {
+        color: white;
+        background-color: #494c4a; }
   .hamburger_open .social_media_merge {
     width: 380px; }
   .hamburger_open li {
@@ -230,6 +239,7 @@ body {
     width: 100%;
     margin-bottom: 10%; }
   .hamburger_open .header_title_activity {
+    width: 100%;
     width: 380px; }
     .hamburger_open .header_title_activity span {
       padding: 10px; }
@@ -264,8 +274,10 @@ body {
         .hamburger_open .header_title_activity .link_for_pro a:hover {
           color: white;
           background-color: #494c4a; }
-  .hamburger_open .social_media_info {
+  .hamburger_open .social_media li {
     width: 380px; }
+  .hamburger_open .social_media_info {
+    width: 100%; }
     .hamburger_open .social_media_info .media_sociaux {
       padding: 10px;
       font-size: 18px;
@@ -544,5 +556,115 @@ body {
   margin-left: 2%; }
 
 @media only screen and (max-width: 400px) {
-  .top-menu {
-    display: none; } }
+  body {
+    overflow-x: hidden; }
+    body .top-menu {
+      display: none; }
+    body .main .content {
+      width: 380px;
+      overflow: hidden; }
+      body .main .content .content_wrapper {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 10px; }
+        body .main .content .content_wrapper li {
+          width: 100%;
+          padding: 10px; }
+          body .main .content .content_wrapper li .project {
+            width: 100%; }
+        body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
+          width: 100%; }
+        body .main .content .content_wrapper .pro_thumbnail img {
+          width: 18.9%; }
+        body .main .content .content_wrapper .spotify_chart .example {
+          width: 47%;
+          margin-top: 27%;
+          margin-left: 15%; }
+    body .main .social_media_merge {
+      width: 365px; }
+      body .main .social_media_merge li {
+        width: 100%;
+        padding: 10px; }
+        body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
+          width: 100%; }
+        body .main .social_media_merge li .social_media_info .fa {
+          width: 62px; } }
+
+@media only screen and (max-width: 667px) {
+  body {
+    overflow-x: hidden; }
+    body .top-menu {
+      display: none; }
+    body .main .content {
+      width: 667px; }
+      body .main .content .content_wrapper {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 10px; }
+        body .main .content .content_wrapper li {
+          width: 635px;
+          padding: 10px; }
+          body .main .content .content_wrapper li .project {
+            width: 100%; }
+        body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
+          width: 100%; }
+        body .main .content .content_wrapper .pro_thumbnail img {
+          width: 19.4%; }
+        body .main .content .content_wrapper .spotify_chart .example {
+          width: 47%;
+          margin-top: 27%;
+          margin-left: 15%; }
+    body .main .social_media_merge {
+      margin: 0;
+      width: 652px;
+      padding: 10px; }
+      body .main .social_media_merge li {
+        width: 100%;
+        padding: 10px; }
+        body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
+          width: 100%; }
+        body .main .social_media_merge li .social_media_info .fa {
+          font-size: 45px;
+          width: 87px;
+          margin: 4.5%; } }
+
+@media only screen and (max-width: 375px) {
+  body {
+    overflow-x: hidden; }
+    body .top-menu {
+      display: none; }
+    body .main .content {
+      width: 375px; }
+      body .main .content .content_wrapper {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 10px; }
+        body .main .content .content_wrapper li {
+          width: 355px;
+          padding: 10px; }
+          body .main .content .content_wrapper li .project {
+            width: 100%; }
+        body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
+          width: 100%; }
+        body .main .content .content_wrapper .pro_thumbnail img {
+          width: 19.4%; }
+        body .main .content .content_wrapper .spotify_chart .example {
+          width: 47%;
+          margin-top: 27%;
+          margin-left: 15%; }
+    body .main .social_media_merge {
+      margin: 0;
+      width: 360px;
+      padding: 10px; }
+      body .main .social_media_merge li {
+        width: 100%;
+        padding: 10px; }
+        body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
+          width: 100%; }
+        body .main .social_media_merge li .social_media_info .fa {
+          font-size: 45px;
+          width: 87px;
+          margin: 4.5%; } }

@@ -129,6 +129,7 @@ body
             span
               font-size: 1.8rem
               font-weight: 400
+              width: 100%
             hr
               @extend .hr_normalize
         .top_bar_status
@@ -167,6 +168,7 @@ body
             background-color: #494c4a
   .start_info
         @extend .box_normalize
+        width: 100%
         span
           padding: 10px
         p
@@ -192,6 +194,7 @@ body
               padding: 10px
   .section_pro
     @extend .box_normalize
+    width: 100%
     span
       font-weight: bold
       padding: 10px
@@ -206,6 +209,7 @@ body
             background-color: #494c4a
   .spotify_chart
     @extend .box_normalize
+    width: 100%
     span
       padding: 10px
       margin-bottom: 1.5%
@@ -235,6 +239,7 @@ body
           font-weight: 200
   .user_profils
     @extend .box_normalize
+    width: 100%
     span
       padding: 10px
       font-size: 20px
@@ -262,6 +267,7 @@ body
       margin-bottom: 10%
   .header_title_activity
     @extend .box_normalize
+    width: 100%
     width: 380px
     span
       padding: 10px
@@ -299,9 +305,11 @@ body
           color: white
           background-color: #494c4a
   .social_media
+    li
+      width: 380px
   .social_media_info
       @extend .box_normalize
-      width: 380px
+      width: 100%
       .media_sociaux
         padding: 10px
         font-size: 18px
@@ -350,6 +358,7 @@ body
     margin-left: 2%
     // responsive
   @include mq($max-width: 400px)
+
 .hr_normalize
   height: 2px
   border: none
@@ -584,8 +593,8 @@ body
         background-color: #3b5998
         border-radius: 50%
   .platform_social_link
-    margin-top: 5.5%;
-    margin-bottom: 2.5%;
+    margin-top: 5.5%
+    margin-bottom: 2.5%
     a
       border: 1px solid #494c4a
       border-radius: 5px
@@ -600,7 +609,137 @@ body
   ul
     float: left
     margin-left: 2%
-    // responsive
+    // responsive pur mobile
 @include mq($max-width: 400px)
+  body
+    overflow-x: hidden
     .top-menu
       display: none
+    .main
+      .content
+        width: 380px
+        overflow: hidden
+        .content_wrapper
+          float: none
+          width: 100%
+          margin: 0
+          padding: 10px
+          li
+            width: 100%
+            padding: 10px
+            .project
+              width: 100%
+          .start_info,.section_pro,.spotify_chart,.user_profils
+            width: 100%
+          .pro_thumbnail
+            img
+              width: 18.9%
+          .spotify_chart
+            .example
+              width: 47%
+              margin-top: 27%
+              margin-left: 15%
+      .social_media_merge
+        width: 365px
+        li
+          width: 100%
+          padding: 10px
+          .header_title_activity,.social_media,.social_media_info
+            width: 100%
+          .social_media_info
+            .fa
+              width: 62px
+  // responsive tablette ipad landscape mode
+@include mq($max-width:1024px)
+
+  // reponsive tablette portrait mode
+@include mq($max-width:768px)
+  // reponsive iphone 6 7 portrait
+
+
+// include reponsive iphone 6 7 landscape
+@include mq($max-width:667px)
+  body
+    overflow-x: hidden
+    .top-menu
+      display: none
+    .main
+      .content
+        width: 667px
+        .content_wrapper
+          float: none
+          width: 100%
+          margin: 0
+          padding: 10px
+          li
+            width: 635px
+            padding: 10px
+            .project
+              width: 100%
+          .start_info,.section_pro,.spotify_chart,.user_profils
+            width: 100%
+          .pro_thumbnail
+            img
+              width: 19.4%
+          .spotify_chart
+            .example
+              width: 47%
+              margin-top: 27%
+              margin-left: 15%
+      .social_media_merge
+        margin: 0
+        width: 652px
+        padding: 10px
+        li
+          width: 100%
+          padding: 10px
+          .header_title_activity,.social_media,.social_media_info
+            width: 100%
+          .social_media_info
+            .fa
+              font-size: 45px
+              width: 87px
+              margin: 4.5%
+
+@include mq($max-width:375px)
+  body
+    overflow-x: hidden
+    .top-menu
+      display: none
+    .main
+      .content
+        width: 375px
+        .content_wrapper
+          float: none
+          width: 100%
+          margin: 0
+          padding: 10px
+          li
+            width: 355px
+            padding: 10px
+            .project
+              width: 100%
+          .start_info,.section_pro,.spotify_chart,.user_profils
+            width: 100%
+          .pro_thumbnail
+            img
+              width: 19.4%
+          .spotify_chart
+            .example
+              width: 47%
+              margin-top: 27%
+              margin-left: 15%
+      .social_media_merge
+        margin: 0
+        width: 360px
+        padding: 10px
+        li
+          width: 100%
+          padding: 10px
+          .header_title_activity,.social_media,.social_media_info
+            width: 100%
+          .social_media_info
+            .fa
+              font-size: 45px
+              width: 87px
+              margin: 4.5%
