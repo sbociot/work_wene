@@ -21,11 +21,17 @@
    <div class="menu-toggle">
       <div class="hamburger"></div>
    </div>
+   <h2><span>SPINN</span><span>UP</span></h2>
    <nav class="site-top-nav">
       <ul class="top-menu">
          <li><a href="#">Contacter l’assistance technique</a></li>
          <li><a href="#">Aide / FAQ</a></li>
       </ul>
+   </nav>
+   <nav class="reponsive_menu">
+     <ul>
+       <li><a href="#"><img src="images/info.png" alt="More Info"></a></li>
+     </ul>
    </nav>
 </div>
 <div class="content">
