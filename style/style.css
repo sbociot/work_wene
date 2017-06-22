@@ -8,6 +8,11 @@ body {
   background-color: #f0f0f0;
 }
 
+#myChart {
+  width: 100%;
+  height: auto;
+}
+
 .mysideNav {
   height: 100%;
   position: fixed;
@@ -45,9 +50,17 @@ body {
   list-style: none;
 }
 
+.mysideNav .menu li:hover {
+  background-color: #eaeaea;
+}
+
 .mysideNav .menu li:nth-of-type(8) {
   text-align: center;
   background-color: #EE2C6C;
+}
+
+.mysideNav .menu li:nth-of-type(8):hover {
+  background-color: #f12367;
 }
 
 .mysideNav .menu li:nth-of-type(8) a {
@@ -57,6 +70,11 @@ body {
 .mysideNav .menu a {
   color: #6a6a6a;
   text-align: center;
+  display: block;
+}
+
+.mysideNav .menu a:hover {
+  text-decoration: none;
 }
 
 .mysideNav .menu a .fa {
@@ -71,6 +89,21 @@ body {
 .handler .top-menu {
   margin-left: 0;
   transition: margin-left .3s;
+  padding: 10px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.handler .top-menu li {
+  display: inline-block;
+}
+
+.handler .top-menu li a {
+  color: white;
+}
+
+.handler .top-menu li a:hover {
+  text-decoration: none;
 }
 
 .handler .menu-toggle {
@@ -843,6 +876,164 @@ body {
   margin-left: 2%;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .top-menu {
+    display: none;
+  }
+  body .main .content {
+    width: 738px;
+    overflow-x: hidden;
+  }
+  body .main .content .content_wrapper {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li {
+    width: 100%;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li .project {
+    width: 100%;
+  }
+  body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
+    width: 100%;
+  }
+  body .main .content .content_wrapper .pro_thumbnail img {
+    width: 19.4%;
+  }
+  body .main .content .content_wrapper .spotify_chart .example {
+    width: 47%;
+    margin-top: 27%;
+    margin-left: 15%;
+  }
+  body .main .social_media_merge {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  body .main .social_media_merge li {
+    width: 100%;
+    padding: 10px;
+  }
+  body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
+    width: 100%;
+  }
+  body .main .social_media_merge li .social_media_info .fa {
+    font-size: 45px;
+    width: 87px;
+    margin: 4.5%;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .top-menu {
+    display: none;
+  }
+  body .main .content {
+    width: 667px;
+  }
+  body .main .content .content_wrapper {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li {
+    width: 647px;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li .project {
+    width: 100%;
+  }
+  body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
+    width: 100%;
+  }
+  body .main .content .content_wrapper .pro_thumbnail img {
+    width: 19.4%;
+  }
+  body .main .content .content_wrapper .spotify_chart .example {
+    width: 47%;
+    margin-top: 27%;
+    margin-left: 15%;
+  }
+  body .main .social_media_merge {
+    margin: 0;
+    width: 667px;
+    padding: 10px;
+  }
+  body .main .social_media_merge li {
+    width: 100%;
+    padding: 10px;
+  }
+  body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
+    width: 100%;
+  }
+  body .main .social_media_merge li .social_media_info .fa {
+    font-size: 45px;
+    width: 87px;
+    margin: 4.5%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .top-menu {
+    display: none;
+  }
+  body .main .content {
+    width: 414px;
+    overflow: hidden;
+  }
+  body .main .content .content_wrapper {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li {
+    width: 100%;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li .project {
+    width: 100%;
+  }
+  body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
+    width: 100%;
+  }
+  body .main .content .content_wrapper .pro_thumbnail img {
+    width: 18.9%;
+  }
+  body .main .content .content_wrapper .spotify_chart .example {
+    width: 47%;
+    margin-top: 27%;
+    margin-left: 15%;
+  }
+  body .main .social_media_merge {
+    width: 413px;
+  }
+  body .main .social_media_merge li {
+    width: 100%;
+    padding: 10px;
+  }
+  body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
+    width: 100%;
+  }
+  body .main .social_media_merge li .social_media_info .fa {
+    width: 49px;
+    font-size: 28px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   body {
     overflow-x: hidden;
@@ -893,59 +1084,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 667px) {
-  body {
-    overflow-x: hidden;
-  }
-  body .top-menu {
-    display: none;
-  }
-  body .main .content {
-    width: 667px;
-  }
-  body .main .content .content_wrapper {
-    float: none;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-  }
-  body .main .content .content_wrapper li {
-    width: 635px;
-    padding: 10px;
-  }
-  body .main .content .content_wrapper li .project {
-    width: 100%;
-  }
-  body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
-    width: 100%;
-  }
-  body .main .content .content_wrapper .pro_thumbnail img {
-    width: 19.4%;
-  }
-  body .main .content .content_wrapper .spotify_chart .example {
-    width: 47%;
-    margin-top: 27%;
-    margin-left: 15%;
-  }
-  body .main .social_media_merge {
-    margin: 0;
-    width: 652px;
-    padding: 10px;
-  }
-  body .main .social_media_merge li {
-    width: 100%;
-    padding: 10px;
-  }
-  body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
-    width: 100%;
-  }
-  body .main .social_media_merge li .social_media_info .fa {
-    font-size: 45px;
-    width: 87px;
-    margin: 4.5%;
-  }
-}
-
 @media only screen and (max-width: 375px) {
   body {
     overflow-x: hidden;
@@ -969,11 +1107,17 @@ body {
   body .main .content .content_wrapper li .project {
     width: 100%;
   }
+  body .main .content .content_wrapper li .project .status_image {
+    width: 100%;
+  }
+  body .main .content .content_wrapper li .project .status_image img {
+    width: 100%;
+  }
   body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
     width: 100%;
   }
   body .main .content .content_wrapper .pro_thumbnail img {
-    width: 19.4%;
+    width: 18.4%;
   }
   body .main .content .content_wrapper .spotify_chart .example {
     width: 47%;
@@ -982,7 +1126,7 @@ body {
   }
   body .main .social_media_merge {
     margin: 0;
-    width: 360px;
+    width: 375px;
     padding: 10px;
   }
   body .main .social_media_merge li {
@@ -994,7 +1138,69 @@ body {
   }
   body .main .social_media_merge li .social_media_info .fa {
     font-size: 45px;
-    width: 87px;
-    margin: 4.5%;
+    width: 67px;
+    margin: 0.5%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .top-menu {
+    display: none;
+  }
+  body .main .content {
+    width: 320px;
+  }
+  body .main .content .content_wrapper {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li {
+    width: 300px;
+    padding: 10px;
+  }
+  body .main .content .content_wrapper li .project {
+    width: 100%;
+  }
+  body .main .content .content_wrapper li .project .status_image {
+    width: 100%;
+  }
+  body .main .content .content_wrapper li .project .status_image img {
+    width: 100%;
+  }
+  body .main .content .content_wrapper li .project .status_infos {
+    width: 255px;
+  }
+  body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
+    width: 100%;
+  }
+  body .main .content .content_wrapper .pro_thumbnail img {
+    width: 18.4%;
+  }
+  body .main .content .content_wrapper .spotify_chart .example {
+    width: 47%;
+    margin-top: 27%;
+    margin-left: 15%;
+  }
+  body .main .social_media_merge {
+    margin: 0;
+    width: 305px;
+    padding: 10px;
+  }
+  body .main .social_media_merge li {
+    width: 100%;
+    padding: 10px;
+  }
+  body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
+    width: 100%;
+  }
+  body .main .social_media_merge li .social_media_info .fa {
+    font-size: 45px;
+    width: 67px;
+    margin: 0.5%;
   }
 }

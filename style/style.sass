@@ -7,7 +7,9 @@
 body
   background-color: #f0f0f0
 
-
+#myChart
+  width: 100%
+  height: auto
 .mysideNav
     height: 100%
     position: fixed
@@ -37,22 +39,40 @@ body
       li
         padding: 10px
         list-style: none
+        &:hover
+          background-color: #eaeaea
       li:nth-of-type(8)
         text-align: center
         background-color: #EE2C6C
+        &:hover
+          background-color: #f12367
         a
           color: white
       a
         color: #6a6a6a
         text-align: center
+        display: block
+        &:hover
+          text-decoration: none
         .fa
           margin: 10px
+
+
 .handler
   background-color: #4a4c4b
   height: 55px
   .top-menu
     margin-left: 0
     transition: margin-left .3s
+    padding: 10px
+    padding-right: 20px
+    padding-top: 20px
+    li
+      display: inline-block
+      a
+        color: white
+        &:hover
+          text-decoration: none
 
   .menu-toggle
     padding: 1.8em
@@ -603,13 +623,155 @@ body
       &:hover
         color: white
         background-color: #494c4a
-
-
 .content
   ul
     float: left
     margin-left: 2%
     // responsive pur mobile
+
+@include mq($max-width:1024px)
+
+
+
+
+
+
+
+
+
+
+
+@include mq($max-width:768px)
+    body
+      overflow-x: hidden
+      .top-menu
+        display: none
+      .main
+        .content
+          width: 738px
+          overflow-x: hidden
+          .content_wrapper
+            float: none
+            width: 100%
+            margin: 0
+            padding: 10px
+            li
+              width: 100%
+              padding: 10px
+              .project
+                width: 100%
+            .start_info,.section_pro,.spotify_chart,.user_profils
+              width: 100%
+            .pro_thumbnail
+              img
+                width: 19.4%
+            .spotify_chart
+              .example
+                width: 47%
+                margin-top: 27%
+                margin-left: 15%
+        .social_media_merge
+          margin: 0
+          width: 100%
+          padding: 10px
+          li
+            width: 100%
+            padding: 10px
+            .header_title_activity,.social_media,.social_media_info
+              width: 100%
+            .social_media_info
+              .fa
+                font-size: 45px
+                width: 87px
+                margin: 4.5%
+// include reponsive iphone 6 7 landscape
+@include mq($max-width:667px)
+  body
+    overflow-x: hidden
+    .top-menu
+      display: none
+    .main
+      .content
+        width: 667px
+        .content_wrapper
+          float: none
+          width: 100%
+          margin: 0
+          padding: 10px
+          li
+            width: 647px
+            padding: 10px
+            .project
+              width: 100%
+          .start_info,.section_pro,.spotify_chart,.user_profils
+            width: 100%
+          .pro_thumbnail
+            img
+              width: 19.4%
+          .spotify_chart
+            .example
+              width: 47%
+              margin-top: 27%
+              margin-left: 15%
+      .social_media_merge
+        margin: 0
+        width: 667px
+        padding: 10px
+        li
+          width: 100%
+          padding: 10px
+          .header_title_activity,.social_media,.social_media_info
+            width: 100%
+          .social_media_info
+            .fa
+              font-size: 45px
+              width: 87px
+              margin: 4.5%
+  // reponsive tablette portrait mode
+// fin reponsive iphone 6 7 landscape
+// iphone 5 portrait
+@include mq($max-width:568px)
+// fin responsive iphone 5s landscape
+@include mq($max-width:414px)
+  body
+    overflow-x: hidden
+    .top-menu
+      display: none
+    .main
+      .content
+        width: 414px
+        overflow: hidden
+        .content_wrapper
+          float: none
+          width: 100%
+          margin: 0
+          padding: 10px
+          li
+            width: 100%
+            padding: 10px
+            .project
+              width: 100%
+          .start_info,.section_pro,.spotify_chart,.user_profils
+            width: 100%
+          .pro_thumbnail
+            img
+              width: 18.9%
+          .spotify_chart
+            .example
+              width: 47%
+              margin-top: 27%
+              margin-left: 15%
+      .social_media_merge
+        width: 413px
+        li
+          width: 100%
+          padding: 10px
+          .header_title_activity,.social_media,.social_media_info
+            width: 100%
+          .social_media_info
+            .fa
+              width: 49px
+              font-size: 28px
 @include mq($max-width: 400px)
   body
     overflow-x: hidden
@@ -649,58 +811,8 @@ body
           .social_media_info
             .fa
               width: 62px
-  // responsive tablette ipad landscape mode
-@include mq($max-width:1024px)
-
-  // reponsive tablette portrait mode
-@include mq($max-width:768px)
-  // reponsive iphone 6 7 portrait
-
-
-// include reponsive iphone 6 7 landscape
-@include mq($max-width:667px)
-  body
-    overflow-x: hidden
-    .top-menu
-      display: none
-    .main
-      .content
-        width: 667px
-        .content_wrapper
-          float: none
-          width: 100%
-          margin: 0
-          padding: 10px
-          li
-            width: 635px
-            padding: 10px
-            .project
-              width: 100%
-          .start_info,.section_pro,.spotify_chart,.user_profils
-            width: 100%
-          .pro_thumbnail
-            img
-              width: 19.4%
-          .spotify_chart
-            .example
-              width: 47%
-              margin-top: 27%
-              margin-left: 15%
-      .social_media_merge
-        margin: 0
-        width: 652px
-        padding: 10px
-        li
-          width: 100%
-          padding: 10px
-          .header_title_activity,.social_media,.social_media_info
-            width: 100%
-          .social_media_info
-            .fa
-              font-size: 45px
-              width: 87px
-              margin: 4.5%
-
+                  // responsive tablette ipad landscape mode
+// reponsive iphone 6 7 portrait
 @include mq($max-width:375px)
   body
     overflow-x: hidden
@@ -719,11 +831,15 @@ body
             padding: 10px
             .project
               width: 100%
+              .status_image
+                width: 100%
+                img
+                  width: 100%
           .start_info,.section_pro,.spotify_chart,.user_profils
             width: 100%
           .pro_thumbnail
             img
-              width: 19.4%
+              width: 18.4%
           .spotify_chart
             .example
               width: 47%
@@ -731,7 +847,7 @@ body
               margin-left: 15%
       .social_media_merge
         margin: 0
-        width: 360px
+        width: 375px
         padding: 10px
         li
           width: 100%
@@ -741,5 +857,56 @@ body
           .social_media_info
             .fa
               font-size: 45px
-              width: 87px
-              margin: 4.5%
+              width: 67px
+              margin: 0.5%
+//fin reponsive iphone 6 7 portrait
+// reponsive iphone 5
+@include mq($max-width:320px)
+    body
+      overflow-x: hidden
+      .top-menu
+        display: none
+      .main
+        .content
+          width: 320px
+          .content_wrapper
+            float: none
+            width: 100%
+            margin: 0
+            padding: 10px
+            li
+              width: 300px
+              padding: 10px
+              .project
+                width: 100%
+                .status_image
+                  width: 100%
+                  img
+                    width: 100%
+                .status_infos
+                  width: 255px
+            .start_info,.section_pro,.spotify_chart,.user_profils
+              width: 100%
+            .pro_thumbnail
+              img
+                width: 18.4%
+            .spotify_chart
+              .example
+                width: 47%
+                margin-top: 27%
+                margin-left: 15%
+        .social_media_merge
+          margin: 0
+          width: 305px
+          padding: 10px
+          li
+            width: 100%
+            padding: 10px
+            .header_title_activity,.social_media,.social_media_info
+              width: 100%
+            .social_media_info
+              .fa
+                font-size: 45px
+                width: 67px
+                margin: 0.5%
+// fin reponsive iphone 5
