@@ -376,7 +376,7 @@ body { background-color: #f0f0f0; }
   body .main h2 span:first-of-type { border-top: 5px solid #f9f9f9; }
   body .main h2 span:nth-of-type(2) { border-bottom: 5px solid #f9f9f9; vertical-align: super; margin-left: 3px; }
   body .main .hideItems { display: none; }
-  body .main .content { width: 414px; overflow: hidden; }
+  body .main .content { width: 100%; overflow: hidden; }
   body .main .content .content_wrapper { float: none; width: 100%; margin: 0; padding: 10px; }
   body .main .content .content_wrapper li { width: 100%; padding: 10px; }
   body .main .content .content_wrapper li .project { width: 100%; }
@@ -454,13 +454,13 @@ body { background-color: #f0f0f0; }
 
 @media only screen and (max-width: 320px) { body { overflow-x: hidden; }
   body .top-menu { display: none; }
-  body .main .reponsive_menu { display: block; margin-top: -54.5px; padding: 10px; padding-right: 25px; }
+  body .main .reponsive_menu { display: block; margin-top: -54.5px; padding: 10px; padding-right: 50px; }
   body .main h2 { display: block; font-size: 25px; margin: 0; padding: 10px; text-align: center; color: #f9f9f9; }
   body .main h2 span:first-of-type { border-top: 5px solid #f9f9f9; }
   body .main h2 span:nth-of-type(2) { border-bottom: 5px solid #f9f9f9; vertical-align: super; margin-left: 3px; }
   body .main .content { width: 100%; }
   body .main .content .content_wrapper { float: none; width: 100%; margin: 0; padding: 10px; }
-  body .main .content .content_wrapper li { width: 100%; padding: 10px; }
+  body .main .content .content_wrapper li { width: 88%; padding: 10px; }
   body .main .content .content_wrapper li .project { width: 100%; }
   body .main .content .content_wrapper li .project .status_image { width: 100%; }
   body .main .content .content_wrapper li .project .status_image img { width: 100%; }

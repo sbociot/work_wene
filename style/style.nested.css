@@ -736,7 +736,7 @@ body {
     body .main .hideItems {
       display: none; }
     body .main .content {
-      width: 414px;
+      width: 100%;
       overflow: hidden; }
       body .main .content .content_wrapper {
         float: none;
@@ -964,7 +964,7 @@ body {
       display: block;
       margin-top: -54.5px;
       padding: 10px;
-      padding-right: 25px; }
+      padding-right: 50px; }
     body .main h2 {
       display: block;
       font-size: 25px;
@@ -986,7 +986,7 @@ body {
         margin: 0;
         padding: 10px; }
         body .main .content .content_wrapper li {
-          width: 100%;
+          width: 88%;
           padding: 10px; }
           body .main .content .content_wrapper li .project {
             width: 100%; }
