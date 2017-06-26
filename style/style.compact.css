@@ -367,7 +367,7 @@ body { background-color: #f0f0f0; }
   body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info { width: 100%; }
   body .main .social_media_merge li .social_media_info .fa { font-size: 45px; width: 87px; margin: 4.5%; } }
 
-@media only screen and (max-width: 640px) { body { overflow-x: hidden; }
+@media only screen and (min-width: 640px) { body { overflow-x: hidden; }
   body .top-menu { display: none; }
   body .main { width: 640px; }
   body .main .reponsive_menu { display: block; margin-top: -54.5px; padding: 10px; padding-right: 25px; }
