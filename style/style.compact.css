@@ -376,7 +376,7 @@ body { background-color: #f0f0f0; }
   body .main h2 span:first-of-type { border-top: 5px solid #f9f9f9; }
   body .main h2 span:nth-of-type(2) { border-bottom: 5px solid #f9f9f9; vertical-align: super; margin-left: 3px; }
   body .main .hideItems { display: none; }
-  body .main .content { width: 100%; overflow: hidden; }
+  body .main .content { width: 414px; overflow: hidden; }
   body .main .content .content_wrapper { float: none; width: 100%; margin: 0; padding: 10px; }
   body .main .content .content_wrapper li { width: 100%; padding: 10px; }
   body .main .content .content_wrapper li .project { width: 100%; }

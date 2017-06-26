@@ -736,7 +736,7 @@ body {
     body .main .hideItems {
       display: none; }
     body .main .content {
-      width: 100%;
+      width: 414px;
       overflow: hidden; }
       body .main .content .content_wrapper {
         float: none;
