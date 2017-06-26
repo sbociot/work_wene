@@ -929,7 +929,7 @@ body {
     margin-left: 3px;
   }
   body .main .content {
-    width: 738px;
+    width: 100%;
     overflow-x: hidden;
   }
   body .main .content .content_wrapper {
@@ -1009,7 +1009,7 @@ body {
     margin-left: 3px;
   }
   body .main .content {
-    width: 667px;
+    width: 100%;
   }
   body .main .content .content_wrapper {
     float: none;
@@ -1018,7 +1018,7 @@ body {
     padding: 10px;
   }
   body .main .content .content_wrapper li {
-    width: 647px;
+    width: 100%;
     padding: 10px;
   }
   body .main .content .content_wrapper li .project {
@@ -1054,90 +1054,9 @@ body {
   }
 }
 
-@media only screen and (min-width: 640px) {
-  body {
-    overflow-x: hidden;
-  }
-  body .top-menu {
-    display: none;
-  }
-  body .main {
-    width: 640px;
-  }
-  body .main .reponsive_menu {
-    display: block;
-    margin-top: -54.5px;
-    padding: 10px;
-    padding-right: 25px;
-  }
-  body .main h2 {
-    display: block;
-    font-size: 25px;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    color: #f9f9f9;
-  }
-  body .main h2 span:first-of-type {
-    border-top: 5px solid #f9f9f9;
-  }
-  body .main h2 span:nth-of-type(2) {
-    border-bottom: 5px solid #f9f9f9;
-    vertical-align: super;
-    margin-left: 3px;
-  }
-  body .main .hideItems {
-    display: none;
-  }
-  body .main .content {
-    width: 640px;
-  }
-  body .main .content .content_wrapper {
-    float: none;
+@media only screen and (min-width: 568px) {
+  .content {
     width: 100%;
-    margin: 0;
-    padding: 10px;
-  }
-  body .main .content .content_wrapper li {
-    width: 622px;
-    padding: 10px;
-  }
-  body .main .content .content_wrapper li .project {
-    width: 100%;
-  }
-  body .main .content .content_wrapper li .project .status_image {
-    width: 100%;
-  }
-  body .main .content .content_wrapper li .project .status_image img {
-    width: 100%;
-  }
-  body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils {
-    width: 100%;
-  }
-  body .main .content .content_wrapper .pro_thumbnail img {
-    width: 18.4%;
-  }
-  body .main .content .content_wrapper .spotify_chart .example {
-    width: 47%;
-    margin-top: 27%;
-    margin-left: 15%;
-  }
-  body .main .social_media_merge {
-    margin: 0;
-    width: 640px;
-    padding: 10px;
-  }
-  body .main .social_media_merge li {
-    width: 100%;
-    padding: 10px;
-  }
-  body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info {
-    width: 100%;
-  }
-  body .main .social_media_merge li .social_media_info .fa {
-    font-size: 45px;
-    width: 64px;
-    margin: 6.5%;
   }
 }
 
@@ -1499,7 +1418,7 @@ body {
     margin-left: 3px;
   }
   body .main .content {
-    width: 320px;
+    width: 100%;
   }
   body .main .content .content_wrapper {
     float: none;
@@ -1508,7 +1427,7 @@ body {
     padding: 10px;
   }
   body .main .content .content_wrapper li {
-    width: 300px;
+    width: 100%;
     padding: 10px;
   }
   body .main .content .content_wrapper li .project {
