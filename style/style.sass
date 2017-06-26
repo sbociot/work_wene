@@ -781,73 +781,73 @@ body
   // reponsive tablette portrait mode
 // fin reponsive iphone 6 7 landscape
 // s5 landscape mode responsive
-// @include mq($max-width:640px)
-//   body
-//     overflow-x: hidden
-//     .top-menu
-//       display: none
-//     .main
-//       width: 640px
-//       .reponsive_menu
-//         display: block
-//         margin-top: -54.5px
-//         padding: 10px
-//         padding-right: 25px
-//       h2
-//         display: block
-//         font-size: 25px
-//         margin: 0
-//         padding: 10px
-//         text-align: center
-//         color: #f9f9f9
-//         span:first-of-type
-//               border-top: 5px solid #f9f9f9
-//         span:nth-of-type(2)
-//           border-bottom: 5px solid #f9f9f9
-//           vertical-align: super
-//           margin-left: 3px
-//       .hideItems
-//         display: none
-//       .content
-//         width: 640px
-//         .content_wrapper
-//           float: none
-//           width: 100%
-//           margin: 0
-//           padding: 10px
-//           li
-//             width: 622px
-//             padding: 10px
-//             .project
-//               width: 100%
-//               .status_image
-//                 width: 100%
-//                 img
-//                   width: 100%
-//           .start_info,.section_pro,.spotify_chart,.user_profils
-//             width: 100%
-//           .pro_thumbnail
-//             img
-//               width: 18.4%
-//           .spotify_chart
-//             .example
-//               width: 47%
-//               margin-top: 27%
-//               margin-left: 15%
-//       .social_media_merge
-//         margin: 0
-//         width: 640px
-//         padding: 10px
-//         li
-//           width: 100%
-//           padding: 10px
-//           .header_title_activity,.social_media,.social_media_info
-//             width: 100%
-//           .social_media_info
-//             .fa
-//               font-size: 45px
-//               width: 64px
-//               margin: 6.5%
+@include mq($max-width:640px)
+  body
+    overflow-x: hidden
+    .top-menu
+      display: none
+    .main
+      width: 640px
+      .reponsive_menu
+        display: block
+        margin-top: -54.5px
+        padding: 10px
+        padding-right: 25px
+      h2
+        display: block
+        font-size: 25px
+        margin: 0
+        padding: 10px
+        text-align: center
+        color: #f9f9f9
+        span:first-of-type
+              border-top: 5px solid #f9f9f9
+        span:nth-of-type(2)
+          border-bottom: 5px solid #f9f9f9
+          vertical-align: super
+          margin-left: 3px
+      .hideItems
+        display: none
+      .content
+        width: 640px
+        .content_wrapper
+          float: none
+          width: 100%
+          margin: 0
+          padding: 10px
+          li
+            width: 622px
+            padding: 10px
+            .project
+              width: 100%
+              .status_image
+                width: 100%
+                img
+                  width: 100%
+          .start_info,.section_pro,.spotify_chart,.user_profils
+            width: 100%
+          .pro_thumbnail
+            img
+              width: 18.4%
+          .spotify_chart
+            .example
+              width: 47%
+              margin-top: 27%
+              margin-left: 15%
+      .social_media_merge
+        margin: 0
+        width: 640px
+        padding: 10px
+        li
+          width: 100%
+          padding: 10px
+          .header_title_activity,.social_media,.social_media_info
+            width: 100%
+          .social_media_info
+            .fa
+              font-size: 45px
+              width: 64px
+              margin: 6.5%
 // fin s5 reponsive laandscape
 // iphone 5 portrait
 @include mq($max-width:568px)
@@ -899,8 +899,12 @@ body
           .spotify_chart
             .example
               width: 47%
-              margin-top: 27%
+              margin-top: 15%
               margin-left: 15%
+            .chart_canvas
+              width: 340px
+              canvas
+                width: 100%
       .social_media_merge
         width: 413px
         li
@@ -1159,12 +1163,14 @@ body
                 width: 18.4%
             .spotify_chart
               .example
-                width: 47%
-                margin-top: 27%
-                margin-left: 15%
+                display: none
+              .chart_canvas
+                width: 250px
+                canvas
+                  width: 100%
         .social_media_merge
           margin: 0
-          width: 305px
+          width: 320px
           padding: 10px
           li
             width: 100%
