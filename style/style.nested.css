@@ -688,9 +688,13 @@ body {
           width: 100%; }
         body .main .content .content_wrapper .pro_thumbnail img {
           width: 19.4%; }
+        body .main .content .content_wrapper .spotify_chart .chart_canvas {
+          width: 100%; }
+          body .main .content .content_wrapper .spotify_chart .chart_canvas canvas {
+            width: 100%; }
         body .main .content .content_wrapper .spotify_chart .example {
           width: 47%;
-          margin-top: 27%;
+          margin-top: 15%;
           margin-left: 15%; }
     body .main .social_media_merge {
       margin: 0;
@@ -872,9 +876,13 @@ body {
           width: 100%; }
         body .main .content .content_wrapper .pro_thumbnail img {
           width: 18.4%; }
+        body .main .content .content_wrapper .spotify_chart .chart_canvas {
+          width: 100%; }
+          body .main .content .content_wrapper .spotify_chart .chart_canvas canvas {
+            width: 100%; }
         body .main .content .content_wrapper .spotify_chart .example {
           width: 47%;
-          margin-top: 27%;
+          margin-top: 16%;
           margin-left: 15%; }
     body .main .social_media_merge {
       margin: 0;

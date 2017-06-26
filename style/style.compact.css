@@ -361,7 +361,9 @@ body { background-color: #f0f0f0; }
   body .main .content .content_wrapper li .project { width: 100%; }
   body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils { width: 100%; }
   body .main .content .content_wrapper .pro_thumbnail img { width: 19.4%; }
-  body .main .content .content_wrapper .spotify_chart .example { width: 47%; margin-top: 27%; margin-left: 15%; }
+  body .main .content .content_wrapper .spotify_chart .chart_canvas { width: 100%; }
+  body .main .content .content_wrapper .spotify_chart .chart_canvas canvas { width: 100%; }
+  body .main .content .content_wrapper .spotify_chart .example { width: 47%; margin-top: 15%; margin-left: 15%; }
   body .main .social_media_merge { margin: 0; width: 667px; padding: 10px; }
   body .main .social_media_merge li { width: 100%; padding: 10px; }
   body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info { width: 100%; }
@@ -424,7 +426,9 @@ body { background-color: #f0f0f0; }
   body .main .content .content_wrapper li .project .status_image img { width: 100%; }
   body .main .content .content_wrapper .start_info, body .main .content .content_wrapper .section_pro, body .main .content .content_wrapper .spotify_chart, body .main .content .content_wrapper .user_profils { width: 100%; }
   body .main .content .content_wrapper .pro_thumbnail img { width: 18.4%; }
-  body .main .content .content_wrapper .spotify_chart .example { width: 47%; margin-top: 27%; margin-left: 15%; }
+  body .main .content .content_wrapper .spotify_chart .chart_canvas { width: 100%; }
+  body .main .content .content_wrapper .spotify_chart .chart_canvas canvas { width: 100%; }
+  body .main .content .content_wrapper .spotify_chart .example { width: 47%; margin-top: 16%; margin-left: 15%; }
   body .main .social_media_merge { margin: 0; width: 375px; padding: 10px; }
   body .main .social_media_merge li { width: 100%; padding: 10px; }
   body .main .social_media_merge li .header_title_activity, body .main .social_media_merge li .social_media, body .main .social_media_merge li .social_media_info { width: 100%; }
